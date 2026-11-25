@@ -177,6 +177,7 @@ footer { display: flex; align-items: center; justify-content: space-between; gap
 .players li:first-child .rank { color: var(--rod); }
 .players .name { font-weight: 700; min-width: 0; overflow-wrap: anywhere; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
 .players .name output { font-family: var(--f-display); font-weight: 800; font-size: 26px; font-variant-numeric: tabular-nums; }
+.box h5 .antlers-badge { width: 34px; height: 24px; float: right; margin: -2px 0 0 8px; }
 .antlers-sm { width: 30px; height: 21px; vertical-align: -4px; }
 .score { grid-column: 2; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
 .score button { min-width: 44px; height: 38px; border-radius: 999px; border: 1.5px solid var(--gran); background: transparent; color: var(--gran); font: 700 14px var(--f-body); cursor: pointer; padding: 0 10px; }

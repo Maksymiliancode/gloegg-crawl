@@ -1,7 +1,7 @@
 import type { Card, InfoCard, StopCard } from '../domain/types';
 import { pinUrl, routeUrl } from '../domain/score';
 import { PLAYERS } from '../data/cards';
-import { Heart } from './Icons';
+import { Antlers, Heart } from './Icons';
 
 interface Props {
   card: Card;
@@ -139,7 +139,10 @@ function StopBack({ card }: { card: StopCard }) {
           Wyzwanie <b>1. +3 · 2. +1</b>
         </h4>
         <div className="box duel">
-          <h5>{b.duel.title}</h5>
+          <h5>
+            {b.duel.title}
+            {b.duel.antlers && <Antlers className="antlers-badge" label="przegrany przejmuje rogi" />}
+          </h5>
           <p>{b.duel.text}</p>
           <p className="penalty">
             <b>Kara:</b> {b.duel.penalty}

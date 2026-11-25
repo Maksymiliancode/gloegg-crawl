@@ -16,7 +16,8 @@ export interface StopCard {
     title: string;
     /** Duńskie rzeczy, które robią wszyscy: [co, dlaczego] */
     must: Pair[];
-    duel: { title: string; text: string; penalty: string };
+    /** antlers: przegrany przejmuje przechodnie rogi renifera */
+    duel: { title: string; text: string; penalty: string; antlers?: boolean };
     bonus: string;
   };
 }

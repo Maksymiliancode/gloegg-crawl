@@ -67,6 +67,11 @@ describe('karty', () => {
     }
   });
 
+  it('rogi zaczynają się w Aamanns i przechodzą dalej', () => {
+    expect(stops[0].back.duel.antlers).toBe(true);
+    expect(stops.filter((s) => s.back.duel.antlers).length).toBeGreaterThan(1);
+  });
+
   it('nigdzie nie została stara czapka Mikołaja', () => {
     expect(JSON.stringify(CARDS).toLowerCase()).not.toMatch(/czapk|nissehue/);
   });
