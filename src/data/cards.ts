@@ -116,18 +116,18 @@ export const CARDS: Card[] = [
     mode: 'walking',
     time: '17:10 – 17:45',
     route: [['7 min', 'Pieszo Strøget na wschód (550 m)']],
-    note: 'Nowy jarmark, daty niepewne. Jeśli nie działa, zróbcie samo zdjęcie z Absalonem.',
+    note: 'Nowy jarmark, daty niepewne. Jeśli nie działa, zróbcie zdjęcie z Absalonem, a lakrids kupcie w najbliższym kiosku.',
     back: {
       title: 'Smak północy',
       must: [
-        ['Coś z Grenlandii lub Wysp Owczych', 'Część Królestwa Danii z własną kuchnią: suszone ryby, baranina.'],
+        ['Coś z Grenlandii lub Wysp Owczych', 'Część Królestwa Danii z własną kuchnią: suszone ryby, baranina. Bez takiego stoiska: lakrids, duńska słona lukrecja.'],
         ['Zdjęcie z Absalonem', 'Konny pomnik biskupa, który w 1167 roku założył Kopenhagę.'],
       ],
       duels: [
         {
-          title: 'Prezent dla sąsiada',
-          text: 'Każdy kupuje osobie po prawej najdziwniejszą rzecz ze stoiska, zamawiając po duńsku. Jecie jednocześnie: kto pierwszy skończy, wygrywa, a kto się skrzywi, spada na koniec.',
-          penalty: 'Ostatni pije karny shot.',
+          title: 'Prezent na krzyż',
+          text: 'Agata i Michał kupują po jednej rzeczy dla Julianny i Maksymiliana, a oni dla nich: najdziwniejszą z grenlandzkiego albo farerskiego stoiska, a bez niego najdziwniejszą lakrids. Zamawiacie po duńsku. Jecie jednocześnie: kto pierwszy skończy, wygrywa, a kto się skrzywi, spada na koniec.',
+          penalty: 'Ostatni pije Gammel Dansk, duńską gorzką nalewkę. Jeśli jej nie ma, cokolwiek mocnego.',
         },
       ],
       bonus: 'Najlepsza póza Absalona (telefon jako topór). Wybiera przechodzień: +2.',
