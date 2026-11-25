@@ -62,12 +62,14 @@ export const CARDS: Card[] = [
         ['Śledź na pierwszy ogień', 'Smørrebrød jemy w kolejności: ryba, mięso, ser. Nożem i widelcem.'],
         ['Akvavit do śledzia', 'Kęs śledzia, „Skål!”, oczy, na raz, znowu oczy.'],
       ],
-      duel: {
-        title: 'Zgadnij rachunek',
-        text: 'Zanim przyjdzie rachunek, każdy po cichu wpisuje w telefonie, ile wyniesie w koronach. Najbliższy wygrywa.',
-        penalty: 'Najdalszy zakłada rogi renifera i nosi je, dopóki ktoś ich nie przejmie.',
-        antlers: true,
-      },
+      duels: [
+        {
+          title: 'Zgadnij rachunek',
+          text: 'Zanim przyjdzie rachunek, każdy po cichu wpisuje w telefonie, ile wyniesie w koronach. Najbliższy wygrywa.',
+          penalty: 'Najdalszy zakłada rogi renifera i nosi je, dopóki ktoś ich nie przejmie.',
+          antlers: true,
+        },
+      ],
       bonus: 'Namów kelnera na wspólne „Skål!”, nawet bez picia: +2.',
     },
   },
@@ -81,19 +83,26 @@ export const CARDS: Card[] = [
     mode: 'walking',
     time: '16:00 – 17:00',
     route: [['7 min', 'Pieszo z Aamanns do Strøget (490 m)']],
-    note: 'Lodowisko i łyżwy są za darmo.',
+    note: 'Lodowisko i łyżwy są za darmo. Od razu stańcie w kolejce po łyżwy, gløgg pijcie w kolejce. Jeśli się nie uda, pomijacie obie konkurencje, a rogi zostają, gdzie są.',
     back: {
       title: 'Gløgg i łyżwy',
       must: [
         ['Gløgg zamówiony po duńsku', 'Każdy zamawia sam: „En gløgg, tak”. Kto przejdzie na angielski, pije karny łyk.'],
         ['Æbleskiver', 'Duńskie pączki-kulki z dżemem i cukrem pudrem.'],
       ],
-      duel: {
-        title: 'Wyścig o rogi',
-        text: 'Każdy jedzie jedno okrążenie lodowiska na czas, reszta mierzy stoperem. Najszybszy wygrywa.',
-        penalty: 'Najwolniejszy przejmuje rogi. Jeśli to ta sama osoba, nosi je dalej.',
-        antlers: true,
-      },
+      duels: [
+        {
+          title: 'Wyścig o rogi',
+          text: 'Każdy jedzie jedno okrążenie lodowiska na czas, reszta mierzy stoperem. Najszybszy wygrywa.',
+          penalty: 'Najwolniejszy przejmuje rogi. Jeśli to ta sama osoba, nosi je dalej.',
+          antlers: true,
+        },
+        {
+          title: 'Figura dnia',
+          text: 'Każdy pokazuje jedną figurę: jazdę tyłem, piruet, jaskółkę albo pozę do zdjęcia. Głosujecie, nie na siebie.',
+          penalty: 'Najsłabsza figura pije karny łyk gløgga.',
+        },
+      ],
       bonus: 'Æbleskive w jednym kęsie, bez śladu cukru pudru na sobie: +2.',
     },
   },
@@ -114,11 +123,13 @@ export const CARDS: Card[] = [
         ['Coś z Grenlandii lub Wysp Owczych', 'Część Królestwa Danii z własną kuchnią: suszone ryby, baranina.'],
         ['Zdjęcie z Absalonem', 'Konny pomnik biskupa, który w 1167 roku założył Kopenhagę.'],
       ],
-      duel: {
-        title: 'Prezent dla sąsiada',
-        text: 'Każdy kupuje osobie po prawej najdziwniejszą rzecz ze stoiska, zamawiając po duńsku. Jecie jednocześnie: kto pierwszy skończy, wygrywa, a kto się skrzywi, spada na koniec.',
-        penalty: 'Ostatni pije karny shot.',
-      },
+      duels: [
+        {
+          title: 'Prezent dla sąsiada',
+          text: 'Każdy kupuje osobie po prawej najdziwniejszą rzecz ze stoiska, zamawiając po duńsku. Jecie jednocześnie: kto pierwszy skończy, wygrywa, a kto się skrzywi, spada na koniec.',
+          penalty: 'Ostatni pije karny shot.',
+        },
+      ],
       bonus: 'Najlepsza póza Absalona (telefon jako topór). Wybiera przechodzień: +2.',
     },
   },
@@ -138,11 +149,13 @@ export const CARDS: Card[] = [
         ['Dans om juletræet', 'W Wigilię Duńczycy trzymają się za ręce i chodzą wokół choinki ze śpiewem. Zróbcie jedno okrążenie, głośno.'],
         ['Witryny Magasin du Nord', 'Najstarszy dom towarowy w mieście i jego świąteczne wystawy.'],
       ],
-      duel: {
-        title: 'Oświadczyny po duńsku',
-        text: 'Każdy uczy się od Duńczyka zdania „Vil du gifte dig med mig?”, a potem oświadcza się swojej połówce na kolanie przy choince. Wygrywa największy aplauz obcych.',
-        penalty: 'Najgorszy oświadcza się jeszcze raz, tym razem przechodniowi.',
-      },
+      duels: [
+        {
+          title: 'Oświadczyny po duńsku',
+          text: 'Każdy uczy się od Duńczyka zdania „Vil du gifte dig med mig?”, a potem oświadcza się swojej połówce na kolanie przy choince. Wygrywa największy aplauz obcych.',
+          penalty: 'Najgorszy oświadcza się jeszcze raz, tym razem przechodniowi.',
+        },
+      ],
       bonus: 'Nagraj Duńczyka, który potwierdzi zwyczaj obsypywania cynamonem singli w 25. urodziny. Kto pierwszy: +2.',
     },
   },
@@ -163,11 +176,13 @@ export const CARDS: Card[] = [
         ['Flæskestegssandwich', 'Pieczeń z chrupiącą skórką, czyli danie duńskiej Wigilii, w bułce.'],
         ['Brændte mandler', 'Migdały prażone w cukrze i cynamonie.'],
       ],
-      duel: {
-        title: 'Wyścig do Andersena',
-        text: 'Andersen mieszkał pod numerami 18, 20 i 67. Na „start” każdy szuka tablicy sam. Pierwsze selfie z tablicą na czacie wygrywa.',
-        penalty: 'Ostatni kupuje wszystkim migdały.',
-      },
+      duels: [
+        {
+          title: 'Wyścig do Andersena',
+          text: 'Andersen mieszkał pod numerami 18, 20 i 67. Na „start” każdy szuka tablicy sam. Pierwsze selfie z tablicą na czacie wygrywa.',
+          penalty: 'Ostatni kupuje wszystkim migdały.',
+        },
+      ],
       bonus: 'Toast Skål z obcymi Duńczykami, ze zdjęciem: +2.',
     },
   },
@@ -193,11 +208,13 @@ export const CARDS: Card[] = [
         ['Rød pølse', 'Hot dog z czerwoną parówką z budki pølsevogn.'],
         ['Kolejka razem', 'Dæmonen albo drewniana Rutschebanen z 1914 roku.'],
       ],
-      duel: {
-        title: 'Turniej na stoisku',
-        text: 'Jedno stoisko z grami, każdy ma trzy próby. Najwięcej trafień wygrywa.',
-        penalty: 'Ostatni stawia rundę Julebryg.',
-      },
+      duels: [
+        {
+          title: 'Turniej na stoisku',
+          text: 'Jedno stoisko z grami, każdy ma trzy próby. Najwięcej trafień wygrywa.',
+          penalty: 'Ostatni stawia rundę Julebryg.',
+        },
+      ],
       bonus: 'Nagraj duńską parę, która jest razem dłużej, niż ty masz lat, mówiącą swój sekret udanego małżeństwa. Kto pierwszy: +2.',
     },
   },
@@ -217,11 +234,13 @@ export const CARDS: Card[] = [
         ['Juleøl z kranu', 'Świąteczne piwo z kopenhaskiego browaru kraftowego.'],
         ['10 minut hygge', 'Świeca, telefony ekranem do stołu, tylko wy.'],
       ],
-      duel: {
-        title: 'Ślepa degustacja',
-        text: 'Osoba w rogach renifera podaje trzy różne juleøl w ukrytej kolejności (dostaje +1, ale nie gra). Reszta zgaduje, które jest które. Najwięcej trafień wygrywa.',
-        penalty: 'Ostatni dopija resztki.',
-      },
+      duels: [
+        {
+          title: 'Ślepa degustacja',
+          text: 'Osoba w rogach renifera podaje trzy różne juleøl w ukrytej kolejności (dostaje +1, ale nie gra). Reszta zgaduje, które jest które. Najwięcej trafień wygrywa.',
+          penalty: 'Ostatni dopija resztki.',
+        },
+      ],
       bonus: '30-sekundowy toast weselny dla drugiej pary. Barman wybiera najlepszy: +2. Potem ogłaszacie zwycięzcę.',
     },
   },

@@ -49,8 +49,11 @@ describe('karty', () => {
   it('każdy przystanek ma wyzwanie z karą, bonus i co najmniej jedną rzecz dla wszystkich', () => {
     for (const s of stops) {
       expect(s.back.must.length, s.name).toBeGreaterThan(0);
-      expect(s.back.duel.text, s.name).not.toBe('');
-      expect(s.back.duel.penalty, s.name).not.toBe('');
+      expect(s.back.duels.length, s.name).toBeGreaterThan(0);
+      for (const d of s.back.duels) {
+        expect(d.text, s.name).not.toBe('');
+        expect(d.penalty, s.name).not.toBe('');
+      }
       expect(s.back.bonus, s.name).not.toBe('');
     }
   });
@@ -68,8 +71,8 @@ describe('karty', () => {
   });
 
   it('rogi zaczynają się w Aamanns i przechodzą dalej', () => {
-    expect(stops[0].back.duel.antlers).toBe(true);
-    expect(stops.filter((s) => s.back.duel.antlers).length).toBeGreaterThan(1);
+    expect(stops[0].back.duels.some((d) => d.antlers)).toBe(true);
+    expect(stops.filter((s) => s.back.duels.some((d) => d.antlers)).length).toBeGreaterThan(1);
   });
 
   it('nigdzie nie została stara czapka Mikołaja', () => {

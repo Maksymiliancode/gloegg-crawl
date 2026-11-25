@@ -1,5 +1,12 @@
 export type Pair = [string, string];
 
+export interface Duel {
+  title: string;
+  text: string;
+  penalty: string;
+  antlers?: boolean;
+}
+
 export interface StopCard {
   kind: 'stop';
   num: string;
@@ -16,8 +23,8 @@ export interface StopCard {
     title: string;
     /** Duńskie rzeczy, które robią wszyscy: [co, dlaczego] */
     must: Pair[];
-    /** antlers: przegrany przejmuje przechodnie rogi renifera */
-    duel: { title: string; text: string; penalty: string; antlers?: boolean };
+    /** Jedna albo kilka konkurencji. antlers: przegrany przejmuje przechodnie rogi renifera */
+    duels: Duel[];
     bonus: string;
   };
 }

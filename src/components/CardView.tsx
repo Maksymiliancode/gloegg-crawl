@@ -134,21 +134,23 @@ function StopBack({ card }: { card: StopCard }) {
           ))}
         </ul>
       </div>
-      <div className="sec">
-        <h4>
-          Wyzwanie <b>1. +3 · 2. +1</b>
-        </h4>
-        <div className="box duel">
-          <h5>
-            {b.duel.title}
-            {b.duel.antlers && <Antlers className="antlers-badge" label="przegrany przejmuje rogi" />}
-          </h5>
-          <p>{b.duel.text}</p>
-          <p className="penalty">
-            <b>Kara:</b> {b.duel.penalty}
-          </p>
+      {b.duels.map((d, i) => (
+        <div className="sec" key={d.title}>
+          <h4>
+            {b.duels.length > 1 ? `Wyzwanie ${String.fromCharCode(65 + i)}` : 'Wyzwanie'} <b>1. +3 · 2. +1</b>
+          </h4>
+          <div className="box duel">
+            <h5>
+              {d.title}
+              {d.antlers && <Antlers className="antlers-badge" label="przegrany przejmuje rogi" />}
+            </h5>
+            <p>{d.text}</p>
+            <p className="penalty">
+              <b>Kara:</b> {d.penalty}
+            </p>
+          </div>
         </div>
-      </div>
+      ))}
       <div className="sec">
         <h4>
           Bonus <b>+2</b>
