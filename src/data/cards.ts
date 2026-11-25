@@ -144,19 +144,20 @@ export const CARDS: Card[] = [
     time: '17:50 – 18:10',
     route: [['7 min', 'Pieszo z Højbro Plads (520 m)']],
     back: {
-      title: 'Oświadczyny 2.0',
+      title: 'Polski dla Duńczyków',
       must: [
         ['Dans om juletræet', 'W Wigilię Duńczycy trzymają się za ręce i chodzą wokół choinki ze śpiewem. Zróbcie jedno okrążenie, głośno.'],
         ['Witryny Magasin du Nord', 'Najstarszy dom towarowy w mieście i jego świąteczne wystawy.'],
       ],
       duels: [
         {
-          title: 'Oświadczyny po duńsku',
-          text: 'Każdy uczy się od Duńczyka zdania „Vil du gifte dig med mig?”, a potem oświadcza się swojej połówce na kolanie przy choince. Wygrywa największy aplauz obcych.',
-          penalty: 'Najgorszy oświadcza się jeszcze raz, tym razem przechodniowi.',
+          title: 'Duńczyk mówi po polsku',
+          text: '5 minut, dyktafon w dłoń. Każdy łapie obcego Duńczyka, uczy go polskiego zdania i nagrywa, jak je mówi: Na zdrowie (1), Wesołych Świąt (2), Szczęśliwego Nowego Roku (3), Chrząszcz brzmi w trzcinie (5). Potem porównujecie nagrania: najwyższa wartość wygrywa, remis rozstrzyga głosowanie.',
+          penalty: 'Najniższa wartość albo brak nagrania przejmuje rogi.',
+          antlers: true,
         },
       ],
-      bonus: 'Nagraj Duńczyka, który potwierdzi zwyczaj obsypywania cynamonem singli w 25. urodziny. Kto pierwszy: +2.',
+      bonus: 'Rewanż w tej samej rozmowie: niech Duńczyk nauczy cię najdłuższego duńskiego słowa, jakie zna, i nagraj, jak je powtarzasz. Najdłuższe słowo (liczą się litery): +2.',
     },
   },
   {
