@@ -243,7 +243,7 @@ export const CARDS: Card[] = [
           penalty: 'Ostatni dopija resztki.',
         },
       ],
-      bonus: '30-sekundowy toast weselny dla drugiej pary. Barman wybiera najlepszy: +2. Potem ogłaszacie zwycięzcę.',
+      bonus: 'Skål dla całego baru: każdy w swoim momencie wstaje i wznosi „Skål!” do całej sali. Ktoś nagrywa i liczy obcych z uniesioną szklanką. Najwięcej szklanek w górze: +2. Potem ogłaszacie zwycięzcę wieczoru.',
     },
   },
   {
