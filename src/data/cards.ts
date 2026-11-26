@@ -211,12 +211,13 @@ export const CARDS: Card[] = [
       ],
       duels: [
         {
-          title: 'Turniej na stoisku',
-          text: 'Jedno stoisko z grami, każdy ma trzy próby. Najwięcej trafień wygrywa.',
-          penalty: 'Ostatni stawia rundę Julebryg.',
+          title: 'Oświadczyny po duńsku',
+          text: 'Przy jeziorze z pagodą, w tłumie: każdy po kolei oświadcza się swojej połówce na kolanie, po duńsku: „Vil du gifte dig med mig?”. Druga para nagrywa i liczy obcych, którzy klaszczą albo reagują. Najwięcej reakcji wygrywa.',
+          penalty: 'Najmniej reakcji przejmuje rogi po raz ostatni i w Mikkeller podaje piwa.',
+          antlers: true,
         },
       ],
-      bonus: 'Nagraj duńską parę, która jest razem dłużej, niż ty masz lat, mówiącą swój sekret udanego małżeństwa. Kto pierwszy: +2.',
+      bonus: 'Pierścionek z Tivoli: kto oświadcza się z nagrodą wygraną na stoisku z grami, dostaje +2.',
     },
   },
   {
