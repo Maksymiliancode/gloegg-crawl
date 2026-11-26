@@ -172,19 +172,19 @@ export const CARDS: Card[] = [
     route: [['5 min', 'Pieszo z Kongens Nytorv (370 m)']],
     note: 'Jarmark w piątek prawdopodobnie do 20:00.',
     back: {
-      title: 'Wyścig nad kanałem',
+      title: 'Zgadnij, skąd jestem',
       must: [
         ['Flæskestegssandwich', 'Pieczeń z chrupiącą skórką, czyli danie duńskiej Wigilii, w bułce.'],
         ['Brændte mandler', 'Migdały prażone w cukrze i cynamonie.'],
       ],
       duels: [
         {
-          title: 'Wyścig do Andersena',
-          text: 'Andersen mieszkał pod numerami 18, 20 i 67. Na „start” każdy szuka tablicy sam. Pierwsze selfie z tablicą na czacie wygrywa.',
-          penalty: 'Ostatni kupuje wszystkim migdały.',
+          title: 'Zgadnij, skąd jestem',
+          text: 'Każdy zaczepia obcego i pyta: „Guess where I am from?”. Na każdą złą odpowiedź mówisz tylko „nie” i liczysz pudła, aż padnie Polska (maks. 10). Nagraj to dyktafonem. Najwięcej pudeł, czyli najlepszy kamuflaż, wygrywa.',
+          penalty: 'Najmniej pudeł kupuje wszystkim brændte mandler.',
         },
       ],
-      bonus: 'Toast Skål z obcymi Duńczykami, ze zdjęciem: +2.',
+      bonus: 'W tej samej rozmowie zapytaj, z czym kojarzy mu się Polska. Najbardziej zaskakujące skojarzenie (głosujecie po odsłuchu): +2.',
     },
   },
   {
